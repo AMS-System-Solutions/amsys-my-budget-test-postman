@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "e8655fc0-04df-4133-90d6-8c0b83bede71",
+		"name": "API-User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"viverosjaime@gmail.com\", \n    \"password\": \"$2y$12$rxmRZi5pv6nQDctpAlj.RecCif55DthhTQY80Kr/1VTsnWS33.bjW\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST_USERS_API}}/users/create",
+					"host": [
+						"{{HOST_USERS_API}}"
+					],
+					"path": [
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Identify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"viverosjaime@gmail.com\", \n    \"password\": \"hola\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST_USERS_API}}/users/identify",
+					"host": [
+						"{{HOST_USERS_API}}"
+					],
+					"path": [
+						"users",
+						"identify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST_USERS_API}}/users/get",
+					"host": [
+						"{{HOST_USERS_API}}"
+					],
+					"path": [
+						"users",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

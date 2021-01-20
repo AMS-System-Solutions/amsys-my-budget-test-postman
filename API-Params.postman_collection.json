@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "5f684b31-9511-45e4-bb93-b1fc4f51edf1",
+		"name": "API-Params",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"key\": \"URL_REDIRECT_APPROVED_LOGIN\",\n    \"value\": \"https://www.biobiochile.cl/\",\n    \"paramContext\": \"LOGIN_USER_APP\",\n    \"environment\": \"DEV\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST_PARAMS_API}}/params/create",
+					"host": [
+						"{{HOST_PARAMS_API}}"
+					],
+					"path": [
+						"params",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetContext",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"paramContext\": \"LOGIN_USER_APP\",\n    \"environment\": \"DEV\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST_PARAMS_API}}/params/get",
+					"host": [
+						"{{HOST_PARAMS_API}}"
+					],
+					"path": [
+						"params",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
